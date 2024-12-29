@@ -3,5 +3,13 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/', // Keep this for root-level deployment
+  base: './', // Ensures relative paths for assets
+  build: {
+    outDir: 'dist', // Default output directory
+  },
+  server: {
+    fs: {
+      strict: false, // Allow reading from outside root for debugging
+    },
+  },
 });
