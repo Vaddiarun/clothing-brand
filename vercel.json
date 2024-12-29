@@ -1,10 +1,10 @@
 {
-   "routes": [
-      {
-         "src": "/(.*)",
-         "dest": "/index.html"
-      }
+   "redirects": [
+     {
+       "source": "/:path*",
+       "destination": "/",
+       "permanent": false
+     }
    ]
-  }
-  
-  
+ }
+ 
