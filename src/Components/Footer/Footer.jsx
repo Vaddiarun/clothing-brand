@@ -36,21 +36,20 @@ export const Footer = () => {
               <li className="flex items-center gap-2">
                
                 <div>
-                 <div className='flex items-center gap-2'>
-                 <IoCallOutline className='text-white'  />
-                 <a
-                    href="tel:+8970834996"
-                    className="block text-blue-400 hover:underline"
-                  >
-                    Chethan
-                    +91 8970834996
-                  </a>
-                  
-                 </div>
+                <div className='flex items-center gap-2'>
+  <IoCallOutline className='text-white' />
+  <a
+    href="tel:+19 8970833996" // Replace this with the correct number
+    className="block text-blue-400 hover:underline"
+  >
+    Chethan
+    +91 8970834996
+  </a>
+</div>
                  <div className='flex items-center gap-2'>
                  <IoCallOutline className='text-white' />
                   <a
-                    href="tel:+7981199667"
+                    href="tel:+917981199667"
                     className="block text-blue-400 hover:underline"
                   >
                     Jagadesh
@@ -60,7 +59,7 @@ export const Footer = () => {
                  <div className='flex items-center gap-2'>
                  <IoCallOutline className='text-white' />
                   <a
-                    href="tel:+8309329444"
+                    href="tel:+918309329444"
                     className="block text-blue-400 hover:underline"
                   >
                     vijay
