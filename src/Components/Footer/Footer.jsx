@@ -23,23 +23,14 @@ export const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Contact Us</h3>
             <ul className="space-y-2">
-              <li className="flex items-center gap-2">
-              <CiMail  className="text-white text-2xl" />
-                <a
-                  href="mailto:jvsuniformmarketing@example.com"
-                  className="text-blue-400 hover:underline"
-                >
-                 
-                  jvsuniformmarketing@example.com
-                </a>
-              </li>
+            
               <li className="flex items-center gap-2">
                
                 <div>
                 <div className='flex items-center gap-2'>
   <IoCallOutline className='text-white' />
   <a
-    href="tel:+19 8970833996" // Replace this with the correct number
+    href="tel:+918970834996" // Replace this with the correct number
     className="block text-blue-400 hover:underline"
   >
     Chethan
@@ -53,7 +44,7 @@ export const Footer = () => {
                     className="block text-blue-400 hover:underline"
                   >
                     Jagadesh
-                    +91 7981199667
+                     7981199667
                   </a>
                  </div>
                  <div className='flex items-center gap-2'>
@@ -63,10 +54,20 @@ export const Footer = () => {
                     className="block text-blue-400 hover:underline"
                   >
                     vijay
-                    +91 8309329444
+                    8309329444
                   </a>
                  </div>
                 </div>
+              </li>
+              <li className="flex items-center gap-2">
+              <CiMail  className="text-white text-2xl" />
+                <a
+                  href="mailto:jvsuniformmarketing@example.com"
+                  className="text-blue-400 hover:underline"
+                >
+                 
+                  jvsuniformmarketing@example.com
+                </a>
               </li>
             </ul>
           </div>
