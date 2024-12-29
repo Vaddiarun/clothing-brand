@@ -8,6 +8,7 @@ import About from './Pages/About'
 import Login from './Pages/Login'
 import CreatePage from './Pages/CreatePage'
 import { Products } from './Pages/Products'
+import { DetailsPage } from './Pages/DetailsPage'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       
       <Route path="/create-page" element={<CreatePage/>} />
       <Route path="/category/:category" element={<Products/>} />
+      <Route path="/detailspage" element={<DetailsPage/>} />
     </Routes>
   <Footer/>
     </BrowserRouter>

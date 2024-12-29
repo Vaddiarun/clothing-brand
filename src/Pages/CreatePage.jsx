@@ -80,12 +80,12 @@ const CreatePage = () => {
             >
               <option value="">Select Category</option>
               <option value="pinaform">Pinaform</option>
-              <option value="skirt">Skirt</option>
+              <option value="skirts">Skirt</option>
               <option value="frock">Frock</option>
               <option value="chudidhar">Chudidhar</option>
               <option value="halfpant">Half pant</option>
               <option value="trousers">Trousers</option>
-              <option value="shirt">Shirt</option>
+              <option value="shirts">Shirt</option>
               <option value="waistcoat">Waistcoat</option>
               <option value="shoes">Shoes</option>
               <option value="tshirt">Tshirt</option>
@@ -96,7 +96,6 @@ const CreatePage = () => {
           {/* Submit button */}
           <div className="text-center">
             <button
-   
               type="submit"
               className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-200"
             >

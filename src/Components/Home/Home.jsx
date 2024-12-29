@@ -59,10 +59,14 @@ const Home = () => {
     value:"shoes",
     imageUrl:"https://m.media-amazon.com/images/I/81l3cqUKVTL._AC_UY1000_.jpg"
   },
+  {name:"tie",
+    value:"tie",
+    imageUrl:"https://www.tiemart.com/cdn/shop/articles/unnamed_6aee1fbe-219e-4541-9f98-dea04355eec4_750x.jpg?v=1705614497"
+  },
 ]
   return (
     <div className="p-4">
-  <h1 className="text-2xl font-bold mb-6">Select Category</h1>
+  {/* <h1 className="text-2xl font-bold mb-6">Select Category</h1> */}
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
     {Category.map((product) => (
       <Link to={`/category/${product.value}`} key={product.id}>
