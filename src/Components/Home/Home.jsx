@@ -2,17 +2,6 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-  // const [data, setData] = useState([]);
-
-  // const fetchCategories = async () => {
-  //   const response = await fetch("https://dummyjson.com/products");
-  //   const json = await response.json();
-  //   setData(json.products);
-  // };
-
-  // useEffect(() => {
-  //   fetchCategories();
-  // }, []);
 
   const Category=[{name:"Pinaform",
     value:"pinaform",
@@ -33,7 +22,7 @@ const Home = () => {
   },
   {name:"Half pant",
     value:"halfpant",
-    imageUrl:"https://lh6.googleusercontent.com/proxy/vGrWavy03OYNKgB7zyGC_ngQ4DatKNK7yUz5H_GMZhkJeCdmkQC2n2mB3GpqZtsJF5dNbCdkvRL8LzuPBMW3xc6h01rIMS80xRHDP-C8GcmU536B9JSFovuE"
+    imageUrl:"https://5.imimg.com/data5/SELLER/Default/2023/9/344593799/GR/OS/VX/153555184/school-uniform-shorts-500x500.jpg"
   },
   {name:"Trousers",
     value:"trousers",

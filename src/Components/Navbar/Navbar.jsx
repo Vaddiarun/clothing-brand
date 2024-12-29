@@ -4,7 +4,7 @@ import { GrClose } from "react-icons/gr";
 import { Link } from "react-router-dom";
 import { HiOutlineHome } from "react-icons/hi2";
 import { MdOutlineRoundaboutRight } from "react-icons/md";
-import { FcServices } from "react-icons/fc";
+import { CiSignpostR1 } from "react-icons/ci";
 import { MdConnectWithoutContact } from "react-icons/md";
 import { CgLogIn } from "react-icons/cg";
 import { useNavigate } from "react-router-dom";
@@ -108,7 +108,7 @@ const Navbar = () => {
           <Link to="/">
             <img
               src="https://res.cloudinary.com/dfxkazmkc/image/upload/v1735391457/Flux_Dev_A_modern_sleek_logo_for_JVS_Marketing_featuring_bold__0-removebg-preview_fl8xsu.png"
-              className="w-[100px] h-auto max-w-full"
+              className="w-[110px] h-auto max-w-full"
               alt="Logo"
             />
           </Link>
@@ -131,16 +131,19 @@ const Navbar = () => {
           <Link to="/about" className="text-lg hover:text-orange-400 flex items-center gap-2">
             <MdOutlineRoundaboutRight /> About
           </Link>
-          <Link to="/services" className="text-lg hover:text-orange-400 flex items-center gap-2">
+          {/* <Link to="/services" className="text-lg hover:text-orange-400 flex items-center gap-2">
             <FcServices /> Services
-          </Link>
-          <Link to="/contact" className="text-lg hover:text-orange-400 flex items-center gap-2">
+          </Link> */}
+          <Link to="/contactpage" className="text-lg hover:text-orange-400 flex items-center gap-2">
             <MdConnectWithoutContact /> Contact
+          </Link>
+          <Link to="/create-page" className="text-lg hover:text-orange-400 flex items-center gap-2">
+          <CiSignpostR1 /> Create
           </Link>
           {sucess ? (
             <button
               onClick={handleLogoutClick}
-              className="text-2xl flex justify-center items-center gap-2 hover:text-orange-400 ml-10"
+              className="text-2xl flex justify-center items-center gap-2 hover:text-orange-400 ml-10 mr-10"
             >
               <CiLogout /> Logout
             </button>
@@ -176,20 +179,24 @@ const Navbar = () => {
         >
           <MdOutlineRoundaboutRight /> About
         </Link>
-        <Link
+        {/* <Link
           to="/services"
           className="text-2xl flex justify-center items-center gap-2 hover:text-orange-400 ml-10"
           onClick={() => setOpen(false)}
         >
           <FcServices /> Services
-        </Link>
+        </Link> */}
+         <Link to="/create-page"  className="text-2xl flex justify-center items-center gap-2 hover:text-orange-400 ml-10">
+         <CiSignpostR1 /> Create
+          </Link>
         <Link
-          to="/contact"
+          to="/contactpage"
           className="text-2xl flex justify-center items-center gap-2 hover:text-orange-400 ml-10"
           onClick={() => setOpen(false)}
         >
           <MdConnectWithoutContact /> Contact
         </Link>
+        
         {sucess ? (
           <button
             onClick={handleLogoutClick}

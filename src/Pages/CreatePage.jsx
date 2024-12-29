@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
 
 
 const CreatePage = () => {
@@ -46,8 +47,18 @@ const CreatePage = () => {
     body:JSON.stringify({"data":data1})
   })
   const data=await responce.json();
+  setCategory("");
+  setUrl([]);
+  document.getElementById("fileInput").value="";
   console.log(data)
+  toast.success("Product created successfully!", {
+    position: toast.TOP_CENTER,
+    autoClose: 3000,
+  })
+  
+  
  }
+
   return (
     <div className=" w-screen h-screen flex justify-center items-center bg-gradient-to-r from-gray-800 via-gray-600 to-gray-900 text-white">
       <div className=" bg-transparent p-8 rounded-lg border-2 border-gray-400 shadow-lg w-full max-w-md">
@@ -65,6 +76,7 @@ const CreatePage = () => {
               type="file"
               multiple
               accept="image/*"
+              id="fileInput"
               className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
           </div>
@@ -76,6 +88,7 @@ const CreatePage = () => {
             </label>
             <select
             onChange={(e) => setCategory(e.target.value)}
+            value={Category}
               className=" w-full p-3 border rounded-lg focus:outline-none focus:ring-2 text-black focus:ring-blue-400"
             >
               <option value="">Select Category</option>
@@ -104,6 +117,7 @@ const CreatePage = () => {
           </div>
         </form>
       </div>
+      <ToastContainer />
     </div>
   );
 };

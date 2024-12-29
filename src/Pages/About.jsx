@@ -179,7 +179,7 @@ const About = () => {
         )}
 
         <img
-          src="https://via.placeholder.com/600x400"
+          src="https://mumlyfe.com.au/wp-content/uploads/2018/08/Postive-education-what-makes-a-kid-happy-at-school.jpg"
           alt="Company Image"
           className="w-full md:w-2/3 mx-auto rounded-lg mt-8"
         />
