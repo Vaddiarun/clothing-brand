@@ -16,21 +16,21 @@ export default {
           },
           '25%': {
             top: '0',
-            left: 'calc(100% - 2px)',
+            left: '0',
             width: '100%',
-            height: '100%',
+            height: '0',
           },
           '50%': {
-            top: 'calc(100% - 2px)',
-            left: 'calc(100% - 2px)',
-            width: '100%',
+            top: '0',
+            left: '100%',
+            width: '0',
             height: '100%',
           },
           '75%': {
-            top: 'calc(100% - 2px)',
+            top: '100%',
             left: '0',
             width: '100%',
-            height: '100%',
+            height: '0',
           },
           '100%': {
             top: '0',
@@ -47,3 +47,4 @@ export default {
   },
   plugins: [],
 };
+  
